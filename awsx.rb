@@ -5,21 +5,21 @@
 class Awsx < Formula
   desc "Helps setting aws cli credentials using aws sso"
   homepage "https://github.com/vahid-haghighat/awsx"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vahid-haghighat/awsx/releases/download/v1.1.0/awsx_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e032f59cd6f54cac8e76e1b6d152862a6b7e57d163d4dea3203a2d1822319949"
+      url "https://github.com/vahid-haghighat/awsx/releases/download/v1.2.0/awsx_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "61e2cc22594734825d2dbb83a8571f49d445ea722a8f6f2a5425289978e842c4"
 
       def install
         bin.install "awsx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vahid-haghighat/awsx/releases/download/v1.1.0/awsx_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "a7bb0b03e9a08df7456e6f2ddcc7f2baa059926533af659ff986a59b6cc89d43"
+      url "https://github.com/vahid-haghighat/awsx/releases/download/v1.2.0/awsx_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "544fc5bddcd59ac6c06e0fe6ef5775a480f06cdbf6fe2f946ac4c3729b7ae0c9"
 
       def install
         bin.install "awsx"
@@ -30,8 +30,8 @@ class Awsx < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vahid-haghighat/awsx/releases/download/v1.1.0/awsx_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-        sha256 "7441aa55bf05cf4c16472ec61de9f1a7154d8185187cf5566297beb0fea0776e"
+        url "https://github.com/vahid-haghighat/awsx/releases/download/v1.2.0/awsx_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+        sha256 "558c9ff56d908e8b5e602a310a804ea7a16af717d71c1116bb2dec7de253ec61"
 
         def install
           bin.install "awsx"
@@ -40,8 +40,8 @@ class Awsx < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vahid-haghighat/awsx/releases/download/v1.1.0/awsx_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "59200381fce50d84ec5ac71cb17585e952da58a6aeb3516a012a26fa8b0aa4a3"
+        url "https://github.com/vahid-haghighat/awsx/releases/download/v1.2.0/awsx_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "5028996e7f4a49aa00f12060b7f7e075e281d95ed94958f9aef4587f4daaf8eb"
 
         def install
           bin.install "awsx"
